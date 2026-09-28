@@ -1,0 +1,17 @@
+# Archivos del sistema operativo macOS
+**/.DS_Store
+.AppleDouble
+._*
+.Spotlight-V100
+.Trashes
+
+# Editores de código e IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos temporales
+*.log
+*.tmp
+Thumbs.db
