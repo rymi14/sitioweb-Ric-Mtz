@@ -12,6 +12,12 @@ a {
     text-decoration: none;
 }
 
+.bio p,
+.prof-career p {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
 ul {
     list-style: none;
 }
@@ -21,6 +27,20 @@ h2,
 h3 {
     font-family: "Libre Baskerville", serif;
     font-optical-sizing: auto;
+}
+
+h2, 
+h3 {
+    text-decoration: underline;
+}
+
+.nav-menu li a:hover,
+.footer-links a:hover,
+.footer-contact a:hover,
+.bio a:hover,
+.prof-career a:hover {
+    color: #a9a9a9;
+    border-bottom: 2px solid #a9a9a9;
 }
 
 /* Space formatting */
@@ -111,11 +131,6 @@ body {
     padding: 2px;
 }
 
-.nav-menu li a:hover {
-    color: #a9a9a9;
-    border-bottom: 2px solid #a9a9a9;
-}
-
 /* Content format */
 
 .container {
@@ -195,22 +210,12 @@ body {
     font-weight: bold;
 }
 
-.footer-contact a:hover {
-    color: #a9a9a9;
-    border-bottom: 2px solid #a9a9a9;
-}
-
 .footer-links {
     text-align: left;
 }
 
 .footer-links a {
     padding: 5px;
-}
-
-.footer-links a:hover {
-    color: #a9a9a9;
-    border-bottom: 2px solid #a9a9a9;
 }
 
 .footer-bottom {
@@ -224,9 +229,23 @@ body {
     width: 100%;
 }
 
+.footer h3 {
+    text-decoration: none;
+}
+
 .footer-bottom p a:hover{
     color: #a9a9a9;
     border-bottom: 2px solid #a9a9a9;
+}
+
+/* sobre-mi.html */
+
+.bio-photo {
+    float: left;
+    width: 400px;
+    height: auto;
+    margin: 4px 20px 16px 0;
+    object-fit: cover;
 }
 
 /* Reduced form */
@@ -285,6 +304,12 @@ body {
     flex-shrink: 0;
     border-radius: 50%;
     border: 3px solid #fff;
+    }
+
+    /* sobre-mi.html */
+    .bio-photo {
+        width: 120px;
+        height: 120px;
     }
 
 }
