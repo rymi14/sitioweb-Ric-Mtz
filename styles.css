@@ -248,9 +248,23 @@ body {
     object-fit: cover;
 }
 
+.interests {
+    list-style-type: disc;
+    padding-left: 45px;
+    margin-top: 16px;
+}
+
+.interests li {
+    margin-bottom: 12px;
+}
+
+.interests li strong {
+    color: #faebd7;
+}
+
 /* Reduced form */
 
-@media (max-width: 750px) {
+@media (max-width: 775px) {
 
     .menu-btn {
         display: block;
@@ -308,8 +322,10 @@ body {
 
     /* sobre-mi.html */
     .bio-photo {
-        width: 120px;
-        height: 120px;
+        width: min(100%, 400px);
+        height: auto;
+        margin: 4px 20px 16px 0;
+        object-fit: cover;
     }
 
 }
