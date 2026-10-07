@@ -52,7 +52,12 @@ h2 {
 .list-functions,
 .services-list,
 .electronic-resources,
-.digital-library {
+.digital-library,
+.list-studies,
+.list-early-works,
+.before-cimat-list,
+.joining-cimat-list,
+.current-activities-list {
     list-style-type: disc;
     padding-left: 45px;
     margin-top: 16px;
@@ -62,7 +67,12 @@ h2 {
 .list-functions li,
 .services-list li,
 .electronic-resources li,
-.digital-library li {
+.digital-library li,
+.list-studies li,
+.list-early-works li,
+.before-cimat-list li,
+.joining-cimat-list li,
+.current-activities-list li {
     margin-bottom: 12px;
 }
 
@@ -71,7 +81,12 @@ h2 {
 .list-functions li strong,
 .users p strong,
 .digital-library li strong,
-.information p strong {
+.information p strong,
+.list-studies li strong,
+.list-early-works li strong,
+.before-cimat-list li strong,
+.joining-cimat-list li strong,
+.current-activities-list li strong {
     color: #faebd7;
 }
 
