@@ -146,7 +146,7 @@ La vista móvil se obtiene renderizando el sitio dentro de un `iframe` de **390 
 | `sobre-mi.html` — Sobre mí | ✅ Completa |
 | `biblioteca.html` — Biblioteca | ✅ Completa |
 | `experiencia.html` — Experiencia | ✅ Completa |
-| `proyectos.html` — Actividades | 🚧 Pendiente de integrar |
+| `proyectos.html` — Actividades | ✅ Completa |
 | `contacto.html` — Contacto | 🚧 Pendiente de integrar |
 | Responsive / menú móvil | ✅ Implementado |
 

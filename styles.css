@@ -57,7 +57,12 @@ h2 {
 .list-early-works,
 .before-cimat-list,
 .joining-cimat-list,
-.current-activities-list {
+.current-activities-list,
+.projects-list,
+.collaborations-list,
+.publications-list,
+.events-list,
+.continuing-education-list {
     list-style-type: disc;
     padding-left: 45px;
     margin-top: 16px;
@@ -72,7 +77,12 @@ h2 {
 .list-early-works li,
 .before-cimat-list li,
 .joining-cimat-list li,
-.current-activities-list li {
+.current-activities-list li,
+.projects-list li,
+.collaborations-list li,
+.publications-list li,
+.events-list li,
+.continuing-education-list li {
     margin-bottom: 12px;
 }
 
@@ -86,8 +96,16 @@ h2 {
 .list-early-works li strong,
 .before-cimat-list li strong,
 .joining-cimat-list li strong,
-.current-activities-list li strong {
+.current-activities-list li strong,
+.projects-list li strong,
+.collaborations-list li strong,
+.events-list li strong,
+.civil-protection strong {
     color: #faebd7;
+}
+
+.text-color {
+    color: #f0c674;
 }
 
 /* Space formatting */
@@ -343,6 +361,30 @@ body {
     margin-top: 8px;
 }
 
+/* proyectos.html */
+.civil-protection {
+    display: grid;
+    grid-template-columns: minmax(0, 400px) 1fr;
+    gap: 15px;
+}
+
+.civil-protection h2 {
+    grid-column: 1 / -1;
+}
+
+.figure-simulacrum,
+.simulacrum-img,
+.civil-protection-description {
+    float: none;
+}
+
+.civil-protection-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
 /* Reduced form */
 
 @media (max-width: 775px) {
@@ -421,5 +463,9 @@ body {
         width: 100%;
         flex: initial;
     }
+
+.civil-protection {
+    grid-template-columns: 1fr;
+}
 
 }
