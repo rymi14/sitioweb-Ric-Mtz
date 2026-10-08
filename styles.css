@@ -12,15 +12,15 @@ a {
     text-decoration: none;
 }
 
+p { 
+    text-align: justify; 
+}
 
-.prof-career p {
-    text-align: justify;
+p {
     margin-bottom: 16px;
 }
 
 .bio p {
-    text-align: justify;
-    margin-bottom: 16px;
     margin-top: 25px;
 }
 
@@ -62,45 +62,19 @@ h2 {
 .collaborations-list,
 .publications-list,
 .events-list,
-.continuing-education-list {
+.continuing-education-list,
+.contact-details,
+.institutional-links {
     list-style-type: disc;
     padding-left: 45px;
     margin-top: 16px;
 }
 
-.interests li,
-.list-functions li,
-.services-list li,
-.electronic-resources li,
-.digital-library li,
-.list-studies li,
-.list-early-works li,
-.before-cimat-list li,
-.joining-cimat-list li,
-.current-activities-list li,
-.projects-list li,
-.collaborations-list li,
-.publications-list li,
-.events-list li,
-.continuing-education-list li {
+li {
     margin-bottom: 12px;
 }
 
-.interests li strong,
-.intro-library p strong,
-.list-functions li strong,
-.users p strong,
-.digital-library li strong,
-.information p strong,
-.list-studies li strong,
-.list-early-works li strong,
-.before-cimat-list li strong,
-.joining-cimat-list li strong,
-.current-activities-list li strong,
-.projects-list li strong,
-.collaborations-list li strong,
-.events-list li strong,
-.civil-protection strong {
+strong {
     color: #faebd7;
 }
 
@@ -125,7 +99,6 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         url('./img/3FD882E5-F09D-4DFC-BE6A-111E63171F6A.jpeg') no-repeat center center/cover;
 
-    background-position: center;
     padding: 20px ;
     width: 100%;
     height: 150px;
@@ -145,7 +118,6 @@ body {
         linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
         url('./img/images.jpeg') no-repeat center center/cover;
 
-    background-position: center;
     padding: 20px;
     width: 100%;
     display: flex;
@@ -175,7 +147,6 @@ body {
     font-size: 17px;
     display: flex;
     padding: 0 50px ;
-    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
@@ -212,7 +183,6 @@ body {
 .content-row {
     padding: 30px 0;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 30px;
     width: 100%;
@@ -246,17 +216,12 @@ body {
     gap: 20px;
 }
 
-.intro p {
-    text-align: justify;
-}
-
 /* Footer Distribution */
 
 .footer-top {
     color: #f5f5f5;
     font-size: 14px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -287,7 +252,6 @@ body {
     color: #f5f5f5;
     font-size: 12px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
@@ -312,23 +276,10 @@ body {
 /* biblioteca.html */
 
 .intro-library {
-    display: flex;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 300px minmax(0, 1fr) minmax(0, 0.8fr);
+    align-items: start;
     gap: 24px;
-}
-
-.div-photo {
-    flex: 0 0 300px;
-}
-
-.div-paragraphs {
-    flex: 1;
-    min-width: 0;
-}
-
-.div-video {
-    flex: 0.8;
-    min-width: 0;
 }
 
 .library-photo {
@@ -341,7 +292,6 @@ body {
 .div-paragraphs p,
 .div-video > p {
     margin: 0 0 16px;
-    text-align: justify;
 }
 
 .video-marco {
@@ -372,10 +322,8 @@ body {
     grid-column: 1 / -1;
 }
 
-.figure-simulacrum,
-.simulacrum-img,
 .civil-protection-description {
-    float: none;
+    padding-top: 50px;
 }
 
 .civil-protection-img {
@@ -434,38 +382,23 @@ body {
     }
 
     .foto {
-    width: min(100%, 400px);
-    aspect-ratio: 1;
-    height: auto;
-    overflow: hidden;
-    flex-shrink: 0;
-    border-radius: 50%;
-    border: 3px solid #fff;
+        width: min(100%, 400px);
+        aspect-ratio: 1;
+        height: auto;
     }
 
     /* sobre-mi.html */
     .bio-photo {
         width: min(100%, 400px);
-        height: auto;
-        margin: 4px 20px 16px 0;
-        object-fit: cover;
     }
 
     /* biblioteca.html */
     .intro-library {
-        flex-direction: column;
-        align-items: stretch;
+        grid-template-columns: 1fr;
     }
 
-    .div-photo,
-    .div-paragraphs,
-    .div-video {
-        width: 100%;
-        flex: initial;
+    .civil-protection {
+        grid-template-columns: 1fr;
     }
-
-.civil-protection {
-    grid-template-columns: 1fr;
-}
 
 }

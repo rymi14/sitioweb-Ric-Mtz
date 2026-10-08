@@ -37,7 +37,8 @@ ScrollReveal().reveal('.publications', {delay: 500})
 ScrollReveal().reveal('.events', {delay: 500})
 ScrollReveal().reveal('.civil-protection', {delay: 500})
 ScrollReveal().reveal('.continuing-education', {delay: 500})
-// ScrollReveal().reveal('.', {delay: 500})
-// ScrollReveal().reveal('.', {delay: 500})
-// ScrollReveal().reveal('.', {delay: 500})
+
+// Scroll revel contacto.html
+ScrollReveal().reveal('.contact', {delay: 500})
+ScrollReveal().reveal('.links', {delay: 500})
 // ScrollReveal().reveal('.', {delay: 500})
