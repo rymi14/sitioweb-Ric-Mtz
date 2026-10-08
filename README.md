@@ -147,7 +147,7 @@ La vista móvil se obtiene renderizando el sitio dentro de un `iframe` de **390 
 | `biblioteca.html` — Biblioteca | ✅ Completa |
 | `experiencia.html` — Experiencia | ✅ Completa |
 | `proyectos.html` — Actividades | ✅ Completa |
-| `contacto.html` — Contacto | 🚧 Pendiente de integrar |
+| `contacto.html` — Contacto | ✅ Completa  |
 | Responsive / menú móvil | ✅ Implementado |
 
 ---
